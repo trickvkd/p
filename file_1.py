@@ -1,0 +1,10 @@
+import filecmp
+a=open("s1.txt","r")
+b=a.read()
+print(b)
+c=open("s2.txt","w")
+d=c.write(b)
+print(d)
+c.close()
+d=filecmp.cmp("s1.txt","s2.txt")
+print(d)
